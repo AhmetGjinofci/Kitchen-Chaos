@@ -10,6 +10,7 @@ public class Player : MonoBehaviour
     private void Update()
     {
         Vector2 inputVector = new Vector2(0, 0);
+
         if (Input.GetKey(KeyCode.W))
         {
             inputVector.y = +1;
@@ -29,8 +30,10 @@ public class Player : MonoBehaviour
         inputVector = inputVector.normalized;
 
         Vector3 movDir = new Vector3(inputVector.x, 0f, inputVector.y);
-        transform.position += movDir * Time.deltaTime;
-        Debug.Log(inputVector);
+        transform.position += movDir * moveSpeed * Time.deltaTime;
+
+        float rotateSpeed = 10f;
+        transform.forward = Vector3.Slerp(transform.forward, movDir, Time.deltaTime * rotateSpeed);
     }
 
 }
