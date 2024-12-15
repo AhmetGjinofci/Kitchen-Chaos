@@ -17,15 +17,14 @@ public class ClearCounter : MonoBehaviour
     {
         if(testing && Input.GetKeyDown(KeyCode.T))
         {
-            if(kitchenObject == null)
+            if(kitchenObject != null)
             {
-                kitchenObject.SetClearCounter(secondClearCounter);
-                Debug.Log(kitchenObject.GetClearCounter());
+                kitchenObject.SetClearCounter(secondClearCounter); 
             }
         }
     }
 
-    public void Interact()
+    public void Interact() 
     {
         if (kitchenObject == null)
         {
@@ -57,7 +56,7 @@ public class ClearCounter : MonoBehaviour
     {
         kitchenObject = null;
     }
-
+     
     public bool HasKitchenObject()
     {
         return kitchenObject != null;
