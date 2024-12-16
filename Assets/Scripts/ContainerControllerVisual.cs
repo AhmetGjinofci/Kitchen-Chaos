@@ -25,6 +25,6 @@ public class ContainerControllerVisual : MonoBehaviour
 
     private void ContainerCounter_OnPlayerGrabbedObject(object sender, System.EventArgs e)
     {
-        animator.SetTrigger(OPEN_CLOSE);
+        animator.SetTrigger(OPEN_CLOSE );
     }
 }
