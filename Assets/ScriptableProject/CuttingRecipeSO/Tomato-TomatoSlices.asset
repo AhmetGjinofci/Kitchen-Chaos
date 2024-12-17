@@ -9,9 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 54ba7dff1e72a47bd945ffd3695c077e, type: 3}
-  m_Name: ChesseBlock
+  m_Script: {fileID: 11500000, guid: b5d21bccbe6fc4165bb96f5f0f596ed5, type: 3}
+  m_Name: Tomato-TomatoSlices
   m_EditorClassIdentifier: 
-  prefab: {fileID: 864715916079174456, guid: 9ba1e1005b6ea43f5b2c2f4322a27164, type: 3}
-  sprite: {fileID: 21300000, guid: da2d04fe27b94e34ea0b624569b48a6f, type: 3}
-  objectName: Chesse Block
+  input: {fileID: 11400000, guid: 5059d12e965174b7d9854f7565c6387b, type: 2}
+  output: {fileID: 11400000, guid: 22482a554cbd2453b8263f87140795cd, type: 2}
