@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ContainerControllerVisual : MonoBehaviour
+public class ContainerCounterVisual : MonoBehaviour
 {
 
     private const string OPEN_CLOSE = "OpenClose";
