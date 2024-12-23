@@ -19,7 +19,7 @@ public class DeliveryManagerUI : MonoBehaviour
         DeliveryManager.Instance.OnRecipeSpawned += DeliveryManager_OnRecipeSpawned;
         DeliveryManager.Instance.OnRecipeCompleted += DeliveryManager_OnRecipeCompleted;
 
-        UpdateVisual();
+        UpdateVisual(); 
     }
 
     private void DeliveryManager_OnRecipeCompleted(object sender, System.EventArgs e)
