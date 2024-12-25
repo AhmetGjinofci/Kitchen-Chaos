@@ -22,6 +22,7 @@ public class DeliveryManager : MonoBehaviour
     private float spawnRecipeTimer;
     private float spawnRecipeTimerMax = 4f;
     private int waitingRecipeMax = 4;
+    private int successfulRecipesAmount;
 
 
 
@@ -88,6 +89,9 @@ public class DeliveryManager : MonoBehaviour
                 {
                     //Plate delivered the correct recipe!
 
+
+                    successfulRecipesAmount++;
+
                     waitingRecipeSOList.RemoveAt(i);
 
 
@@ -106,6 +110,12 @@ public class DeliveryManager : MonoBehaviour
     public List<RecipeSO> GetWaitingRecipeSOList()
     {
         return waitingRecipeSOList;
+    }
+
+
+    public int GetSuccessfulRecipesAmount()
+    {
+        return successfulRecipesAmount;
     }
 
 }
