@@ -1355,7 +1355,7 @@ MonoBehaviour:
   interactText: {fileID: 357871127}
   interactAlternateText: {fileID: 898317674}
   pauseText: {fileID: 1361506044}
-  pressToRebindKeyTransform: {fileID: 0}
+  pressToRebindKeyTransform: {fileID: 525156434}
 --- !u!1 &255010741
 GameObject:
   m_ObjectHideFlags: 0
