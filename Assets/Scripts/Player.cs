@@ -71,8 +71,8 @@ public class Player : MonoBehaviour, IKitchenObjectParent
         HandleMovement();
         HandleInteractions();
 
-        Vector2 inputVector = gameInput.GetMovementVectorNormalized();
-        Debug.Log($"Input Vector: {inputVector}"); // Log input values
+        //Vector2 inputVector = gameInput.GetMovementVectorNormalized();
+        //Debug.Log($"Input Vector: {inputVector}"); // Log input values
     }
 
     public bool IsWalking()
