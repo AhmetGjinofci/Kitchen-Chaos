@@ -2178,7 +2178,7 @@ Transform:
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
   m_LocalRotation: {x: 0.3907311, y: 0, z: 0, w: 0.9205049}
-  m_LocalPosition: {x: 0.75, y: 20.3, z: -19.85}
+  m_LocalPosition: {x: 0.75, y: 20.4, z: -19.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3572,8 +3572,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 25
-  m_fontSizeBase: 25
+  m_fontSize: 17.25
+  m_fontSizeBase: 17.25
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -5392,8 +5392,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 25
-  m_fontSizeBase: 25
+  m_fontSize: 15.4
+  m_fontSizeBase: 15.4
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -9324,8 +9324,8 @@ Transform:
   m_GameObject: {fileID: 1290163322}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -11.15, y: 1.2987, z: -1.61}
-  m_LocalScale: {x: 8.404463, y: 2.6374333, z: 12.21}
+  m_LocalPosition: {x: -13.3609, y: 1.2987, z: -1.61}
+  m_LocalScale: {x: 12.826051, y: 2.6374333, z: 12.21}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -9655,8 +9655,8 @@ Transform:
   m_GameObject: {fileID: 1323828411}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 12.7008, y: 1.2987, z: -1.2853}
-  m_LocalScale: {x: 8.404463, y: 2.6374333, z: 12.21}
+  m_LocalPosition: {x: 14.7316, y: 1.2987, z: -1.2853}
+  m_LocalScale: {x: 12.466339, y: 2.6374333, z: 12.21}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -12682,12 +12682,12 @@ MonoBehaviour:
   keyMoveDownText: {fileID: 1392675621}
   keyMoveLeftText: {fileID: 433642962}
   keyMoveRightText: {fileID: 1404031327}
-  keyMoveInteractText: {fileID: 393203469}
-  keyMoveInteractAlternateText: {fileID: 1223581180}
-  keyMovePauseText: {fileID: 647716622}
-  keyMoveGamepadInteractText: {fileID: 1472503336}
-  keyMoveGamepadInteractAlternateText: {fileID: 1277176132}
-  keyMoveGamepadPauseText: {fileID: 444190203}
+  keyInteractText: {fileID: 393203469}
+  keyInteractAlternateText: {fileID: 1223581180}
+  keyPauseText: {fileID: 647716622}
+  keyGamepadInteractText: {fileID: 1472503336}
+  keyGamepadInteractAlternateText: {fileID: 1277176132}
+  keyGamepadPauseText: {fileID: 444190203}
 --- !u!1 &1720795678
 GameObject:
   m_ObjectHideFlags: 0
@@ -12832,6 +12832,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1725646341}
   - component: {fileID: 1725646342}
+  - component: {fileID: 1725646343}
+  - component: {fileID: 1725646344}
   m_Layer: 5
   m_Name: GameStartCountdownUI
   m_TagString: Untagged
@@ -12849,7 +12851,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 313504921}
   m_Father: {fileID: 1896721348}
@@ -12872,6 +12874,39 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   countdownText: {fileID: 313504922}
+--- !u!95 &1725646343
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1725646340}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 503ce01cbfdc34a318ea8d7d2992f65a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!225 &1725646344
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1725646340}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1001 &1743888995
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13694,8 +13729,8 @@ Transform:
   m_GameObject: {fileID: 1903557656}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0.8238, y: 1.2987, z: 8.63}
-  m_LocalScale: {x: 8.404463, y: 2.6374333, z: 32.131622}
+  m_LocalPosition: {x: 0.4095, y: 1.2987, z: 8.63}
+  m_LocalScale: {x: 8.404463, y: 2.6374333, z: 40.86617}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -14847,7 +14882,7 @@ Transform:
   m_GameObject: {fileID: 2013233814}
   serializedVersion: 2
   m_LocalRotation: {x: 0.3907311, y: 0, z: 0, w: 0.9205049}
-  m_LocalPosition: {x: 0.75, y: 20.3, z: -19.85}
+  m_LocalPosition: {x: 0.75, y: 20.4, z: -19.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
