@@ -18,6 +18,7 @@ public class MainMenuUI : MonoBehaviour
         });
 
         quitButton.onClick.AddListener(() => {
+            Debug.Log("Quit Button Pressed");
             Application.Quit();
         });
 

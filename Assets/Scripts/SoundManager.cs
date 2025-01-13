@@ -42,7 +42,7 @@ public class SoundManager : MonoBehaviour
     private void TrashCounter_OnAnyObjectTrashed(object sender, System.EventArgs e)
     {
         TrashCounter trashCounter = sender as TrashCounter;
-        PlaySound(audioClipRefSO.objectDrop, trashCounter.transform.position);
+        PlaySound(audioClipRefSO.trash, trashCounter.transform.position);
     }
 
     private void BaseCounter_OnAnyObjectPlayedHere(object sender, System.EventArgs e)
