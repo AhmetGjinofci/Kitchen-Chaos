@@ -84,21 +84,27 @@ public class Player : MonoBehaviour, IKitchenObjectParent
     {
         Vector2 inputVector = gameInput.GetMovementVectorNormalized();
 
+        // Calculate movement direction
         Vector3 moveDir = new Vector3(inputVector.x, 0f, inputVector.y);
 
-
-        if(moveDir != Vector3.zero)
+        // If not moving, use the last known interaction direction
+        if (moveDir == Vector3.zero)
         {
+            moveDir = lastIteractDir;
+        }
+        else
+        {
+            // Update last interaction direction when moving
             lastIteractDir = moveDir;
         }
 
-        float interactDistance = 2f;    
-        if(Physics.Raycast(transform.position, moveDir, out RaycastHit raycastHit, interactDistance, countersLayerMask))
+        float interactDistance = 2f;
+        if (Physics.Raycast(transform.position, moveDir, out RaycastHit raycastHit, interactDistance, countersLayerMask))
         {
-            if(raycastHit.transform.TryGetComponent(out BaseCounter baseCounter))
+            if (raycastHit.transform.TryGetComponent(out BaseCounter baseCounter))
             {
-                //Has ClearCounter
-                if(baseCounter != selectedCounter)
+                // Handle interaction with the detected counter
+                if (baseCounter != selectedCounter)
                 {
                     SetSelectedCounter(baseCounter);
                 }
@@ -112,8 +118,6 @@ public class Player : MonoBehaviour, IKitchenObjectParent
         {
             SetSelectedCounter(null);
         }
-
-        //Debug.Log(selectedCounter);
     }
 
     private void HandleMovement()
