@@ -1,6 +1,6 @@
 # KitchenChaos
 
-**KitchenChaos** is a fast-paced, cooking-themed game developed in Unity as part of a learning journey. It was built by following a YouTube tutorial and showcases core Unity skills like player movement, item interaction, kitchen station mechanics, and time-based gameplay.
+**KitchenChaos** is a fast-paced, cooking-themed game developed in Unity as part of a learning journey. It was built by following a tutorial and showcases core Unity skills like player movement, item interaction, kitchen station mechanics, and time-based gameplay.
 
 ---
 
