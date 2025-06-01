@@ -24,13 +24,13 @@ Players work in a chaotic kitchen to complete food orders by collecting ingredie
 2. Open Unity Hub.  
 3. Add the project folder to Unity Hub.  
 4. Open the project using Unity (version **2022.3.11**).  
-5. Press ▶ Play in the Unity editor.  
+5. Press Play in the Unity editor.  
 
 ---
 
 ## Technologies Used
 
-- Unity Engine (version **2022.3.11**)  
+- Unity Engine
 - C#  
 - Unity Input System  
 - URP  
